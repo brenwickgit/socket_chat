@@ -5,7 +5,7 @@ import InfiniteScroll from 'react-infinite-scroller';
 import ChatMessage from '../ChatMessage/ChatMessage';
 import MessageStub from '../MessageStub/MessageStub';
 
-const client = new W3CWebSocket('ws://brenwick-websocket-server.herokuapp.com/')
+const client = new W3CWebSocket('wss://brenwick-websocket-server.herokuapp.com/')
 
 export default class ChatBox extends Component {
 
