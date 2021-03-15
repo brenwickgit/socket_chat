@@ -1,25 +1,37 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import MainWindow from './components/MainWindow/MainWindow';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+export default class App extends Component {
+
+  state = {
+    loggedIn: false,
+    username: ''
+  }
+
+  handleSubmit = (e) => {
+    e.preventDefault();
+    if(this.state.username !== ''){
+      this.setState({ loggedIn: true })
+    }
+  }
+
+  render(){
+    return (
+      <div className="main_container">
+        {this.state.loggedIn
+        ?
+        <MainWindow username={this.state.username}/>
+        :
+        <div className="login_screen">
+          <h1 className="login_text">Choose A Nickname</h1>
+          <form className="login_form" onSubmit={this.handleSubmit}>
+            <input className="login_input" onChange={(e) => this.setState({ username: e.target.value })}></input>
+            <button className="login_button" type="submit">Submit</button>
+          </form>
+          </div>}
+      </div>
+    )
+  }
 }
-
-export default App;

@@ -1,0 +1,10 @@
+.user_panel {
+    background-color: white;
+    flex: 20%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.panel_text {
+    text-align: center;
+}

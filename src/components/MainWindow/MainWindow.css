@@ -1,0 +1,12 @@
+.main_window {
+    background: linear-gradient(
+        to left top,
+        var(--dark-primary),
+        var(--light-primary)
+    );
+    width: 85vw;
+    height: 85vh;
+    border-radius: 10px;
+    box-shadow: 20px 20px 20px rgba(0,0,0,0.4);
+    display: flex;
+}

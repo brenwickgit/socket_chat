@@ -1,0 +1,67 @@
+.chat_box {
+    flex: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.message_box {
+    display: flex;
+    flex-direction: column;
+    flex: 95%;
+    padding: 0em 3em;
+    padding-bottom: 3em;
+    overflow-y: scroll;
+    max-height: 95vh;
+}
+
+.infinite_scroll {
+    display: flex;
+    flex-direction: column;
+}
+
+.text_input {
+    flex: 5%;
+    border-bottom-left-radius: 10px;
+    border-top: solid 2px white;
+    display: flex;
+    caret-color: blueviolet;
+}
+
+.input_bar {
+    flex: 90%;
+    background-color: #DDDDFC;
+    border-bottom-left-radius: 10px;
+    border: none;
+    font-size: 1.2em;
+    padding-left: 1em;
+    color: var(--dark-secondary);
+}
+
+.input_bar:focus {
+    outline: none;
+}
+
+.input_button {
+    flex: 10%;
+    text-decoration: none;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 800;
+    font-size: 2.6em;
+    cursor: pointer;
+    color: white;
+}
+
+.input_button:focus {
+    border: none;
+    outline: none;
+    text-decoration: none;
+}
+
+.input_button:active,
+.input_button:hover {
+    background-color: var(--background-primary);
+}

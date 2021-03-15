@@ -1,0 +1,56 @@
+.chat_message {
+    max-width: 30vw;
+    min-width: 15vw;
+    height: max-content;
+    padding: 0.2rem 0.8rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    word-wrap: break-word;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.chat_avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+    color: var(--dark-primary);
+    width: 2em;
+    height: 2em;
+    margin-right: 0.5em;
+}
+
+.chat_info {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+}
+
+.chat_user {
+    font-size: 1.4em;
+    margin: 0;
+}
+
+.chat_text {
+    margin: 0;
+    font-size: 1em;
+    margin-left: 1em;
+    flex-wrap: wrap;
+    line-height: 1.6;
+    color: #e0e7ff;
+}
+
+.chat_timestamp {
+    margin: 0;
+    margin-top: 1em;
+    transform: translateX(0.5em);
+    align-self: flex-end;
+    font-size: 0.7em;
+    text-align: center;
+    color: white;
+}
