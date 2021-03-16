@@ -13,6 +13,12 @@
     overflow-y: scroll;
     max-height: 95vh;
 }
+@media screen and (max-width: 1000px) {
+    .message_box {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+}
 
 .infinite_scroll {
     display: flex;

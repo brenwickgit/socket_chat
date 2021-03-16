@@ -77,6 +77,7 @@ export default class ChatBox extends Component {
                 user={message.user}
               />
     }
+    
     else {
       return <ChatMessage 
                 position={this.state.userName === message.user ? 'flex-end' : 'flex-start'}
